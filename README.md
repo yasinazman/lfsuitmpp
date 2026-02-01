@@ -1,5 +1,5 @@
 # 🛡️ UiTMPP Lost & Found System (LFSUiTMPP)
-**Advanced Web Design Development and Content Management (IMS566)**
+**Developed for IMS566: Advanced Web Design Development and Content Management**
 
 LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak Perdana. It digitizes the manual process of reporting, tracking, and managing lost and found items within the campus, ensuring a more efficient recovery process for students and staff.
 
@@ -22,7 +22,7 @@ LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak
 ## 📂 Installation & Setup
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/lfsuitmpp.git](https://github.com/your-username/lfsuitmpp.git)
+    git clone [https://github.com/yasinazman/lfsuitmpp.git](https://github.com/yasinazman/lfsuitmpp.git)
     ```
 2.  **Database Setup:**
     * Create a new database named `lfsuitmpp`.
@@ -32,13 +32,13 @@ LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak
 4.  **Browser Requirement:** * For the best experience, use **Google Chrome** as per course guidelines.
 
 ## 👥 Development Team (CDIM2624B)
-| Name | Student ID | Primary Role |
+| Name | Student ID | Role & Contribution |
 | :--- | :--- | :--- |
-| **Muhammad Yasin Bin Azman** | 2025198311 | Project Manager & Lead Backend Developer |
-| **Adi Farhan Bin Mohd Faizal** | 2025198493 | UI/UX Designer & Frontend Developer |
-| **Muhammad Adib Fitri Bin Suhaimi** | 2025197205 | Database Administrator |
-| **Ryan Iskandar Shah Bin Mohd Shahril Nizam** | 2025148771 | Quality Assurance (QA) & Documentation |
-| **Muhamad Nur Zuhair Bin Asmade** | 2025381093 | System Analyst |
+| **Muhammad Yasin Bin Azman** | 2025198311 | **Project Manager** <br> (Database Design, Authentication & System Integration) |
+| **Adi Farhan Bin Mohd Faizal** | 2025198493 | **Lost Items Module Lead** <br> (Lost Report CRUD & User Forms) |
+| **Muhamad Nur Zuhair Bin Asmade** | 2025381093 | **Found Items Module Lead** <br> (Found Report CRUD & Claim Status Logic) |
+| **Muhammad Adib Fitri Bin Suhaimi** | 2025197205 | **Admin Dashboard Specialist** <br> (Data Monitoring, Statistics & Reporting Logic) |
+| **Ryan Iskandar Shah** | 2025148771 | **Quality Assurance (QA)** <br> (System Testing, Documentation & User Manual) |
 
 ---
 **Lecturer:** Dr. Muhammad Asyraf Bin Wahi Anuar  
