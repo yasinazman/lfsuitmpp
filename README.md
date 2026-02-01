@@ -28,7 +28,7 @@ LFSUiTMPP is a specialised web-based management system developed for UiTM Puncak
     ```bash
     git clone [https://github.com/yasinazman/lfsuitmpp.git](https://github.com/yasinazman/lfsuitmpp.git)
     ```
-    *Alternatively, you can simply **Download ZIP** from the repository homepage and extract it.* 
+    *Alternatively, you can simply **Download ZIP** from the repository homepage and extract it.* <br>
     <br>
     
 2.  **Install Dependencies:**
@@ -36,7 +36,7 @@ LFSUiTMPP is a specialised web-based management system developed for UiTM Puncak
     ```bash
     composer install
     ```
-    
+
 3.  **Database Setup:**
     * Create a new database named `lfsuitmpp`.
     * Import the SQL schema located at `database/lfsuitmpp.sql`.
