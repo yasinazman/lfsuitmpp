@@ -3,7 +3,7 @@
 
 LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak Perdana. It digitizes the manual process of reporting, tracking, and managing lost and found items within the campus, ensuring a more efficient recovery process for students and staff.
 
-![Dashboard Preview](screenshots/AdminDashboard_DarkMode.png)
+![Dashboard Preview](screenshots/AdminDashboard_Darkmode.png)
 
 ## 🚀 Key Features
 * **Secure Authentication**: Role-based access for administrators with secure login/logout.
@@ -42,7 +42,7 @@ LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak
 | **Ryan Iskandar Shah Bin Mohd Shahril Nizam** | 2025148771 | **Quality Assurance (QA)** <br> (System Testing, Documentation & User Manual) |
 
 ---
-**Lecturer:** Dr. Muhammad Asyraf Bin Wahi Anuar
-**Program:** Bachelor of Information Science (Hons.) Information Systems Management
-**Faculty:** Faculty of Information Science, College of Computing, Informatics and Mathematics
+**Lecturer:** Dr. Muhammad Asyraf Bin Wahi Anuar <br>
+**Program:** Bachelor of Information Science (Hons.) Information Systems Management <br>
+**Faculty:** Faculty of Information Science, College of Computing, Informatics and Mathematics <br>
 **Campus:** UiTM Puncak Perdana
