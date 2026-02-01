@@ -4,7 +4,7 @@
 LFSUiTMPP is a specialised web-based management system developed for UiTM Puncak Perdana. It was created to solve the issue of scattered information, where students previously relied on disorganised WhatsApp groups to locate missing items. This system provides a centralised digital hub, allowing students and staff to report, track, and manage lost and found items efficiently in one place.
 
 <p align="center">
-  <img src="screenshots/lfsuitmpp_logo.png" alt="Dashboard Preview" width="600">
+  <img src="screenshots/lfsuitmpp_logo.png" alt="Dashboard Preview" width="400">
 </p>
 
 ## 🚀 Key Features
