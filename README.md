@@ -26,7 +26,7 @@ LFSUiTMPP is a specialised web-based management system developed for UiTM Puncak
     ```bash
     git clone [https://github.com/yasinazman/lfsuitmpp.git](https://github.com/yasinazman/lfsuitmpp.git)
     ```
-    *Alternatively, you can simply **Download ZIP** from the repository homepage and extract it.*
+    *Alternatively, you can simply **Download ZIP** from the repository homepage and extract it.* <br>
     <br>
 2.  **Install Dependencies:**
     * Run this command in the project terminal to download required libraries:
