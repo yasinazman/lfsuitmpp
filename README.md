@@ -1,7 +1,7 @@
-# 🛡️ UiTMPP Lost & Found System (LFSUiTMPP)
+# 🛡️ UiTM Puncak Perdana Lost & Found System (LFSUiTMPP)
 **Developed for IMS566: Advanced Web Design Development and Content Management**
 
-LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak Perdana. It digitizes the manual process of reporting, tracking, and managing lost and found items within the campus, ensuring a more efficient recovery process for students and staff.
+LFSUiTMPP is a specialised web-based management system developed for UiTM Puncak Perdana. It was created to solve the issue of scattered information, where students previously relied on disorganised WhatsApp groups to locate missing items. This system provides a centralised digital hub, allowing students and staff to report, track, and manage lost and found items efficiently in one place.
 
 ![Dashboard Preview](screenshots/AdminDashboard_DarkMode.png)
 
@@ -10,7 +10,7 @@ LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak
 * **Full CRUD Lifecycle**: Comprehensive management of Lost and Found reports (Create, Read, Update, Delete).
 * **Dynamic UI/UX**: Professional responsive design featuring a persistent Dark Mode toggle.
 * **Automated PDF Export**: Professional report generation for case evidence and documentation.
-* **Data Visualization**: Integrated Chart.js for Monthly and Weekly report analysis.
+* **Data Visualisation**: Integrated Chart.js for Monthly and Weekly report analysis.
 * **Advanced Filtering**: Quick search and status filtering for efficient record management.
 
 ## 🛠️ Tech Stack
@@ -22,7 +22,7 @@ LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak
 ## 📂 Installation & Setup
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/yasinazman/lfsuitmpp.git](https://github.com/yasinazman/lfsuitmpp.git)
+    git clone https://github.com/yasinazman/lfsuitmpp.git
     ```
 2.  **Database Setup:**
     * Create a new database named `lfsuitmpp`.
@@ -31,13 +31,17 @@ LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak
     * Configure your database credentials in `config/app_local.php`.
 4.  **Browser Requirement:**
     * For the best experience, use **Google Chrome** as per course guidelines.
+5.  **Admin Access (Login Credentials):**
+    * To access the administrator dashboard, use the default login:
+        * **Username:** `yasin`
+        * **Password:** `123456`
 
 ## 👥 Development Team (CDIM2624B)
 | Name | Student ID | Role & Contribution |
 | :--- | :--- | :--- |
 | **Muhammad Yasin Bin Azman** | 2025198311 | **Project Manager** <br> (Database Design, Authentication & System Integration) |
-| **Adi Farhan Bin Mohd Faizal** | 2025198493 | **Lost Items Module Lead** <br> (Lost Report CRUD & User Forms) |
-| **Muhamad Nur Zuhair Bin Asmade** | 2025381093 | **Found Items Module Lead** <br> (Found Report CRUD & Claim Status Logic) |
+| **Adi Farhan Bin Mohd Faizal** | 2025198493 | **Lost Items Module Lead** <br> (Lost Report CRUD) |
+| **Muhamad Nur Zuhair Bin Asmade** | 2025381093 | **Found Items Module Lead** <br> (Found Report CRUD) |
 | **Muhammad Adib Fitri Bin Suhaimi** | 2025197205 | **Admin Dashboard Specialist** <br> (Data Monitoring, Statistics & Reporting Logic) |
 | **Ryan Iskandar Shah Bin Mohd Shahril Nizam** | 2025148771 | **Quality Assurance (QA)** <br> (System Testing, Documentation & User Manual) |
 
