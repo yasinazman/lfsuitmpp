@@ -1,0 +1,198 @@
+:root {
+    --uitm-purple: #640e62;
+    --uitm-blue: #0f1f6a;
+    --uitm-yellow: #f9c024;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f5f9;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.shape-1 {
+    top: -100px; left: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, #bfaee3 0%, rgba(255,255,255,0) 70%);
+}
+
+.shape-2 {
+    bottom: -150px; right: -150px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, #dbeafe 0%, rgba(255,255,255,0) 70%);
+}
+
+/* Main Card */
+.landing-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 30px;
+    padding: 50px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.landing-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo/Icon */
+.logo-wrapper {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-circle {
+    width: 100px; 
+    height: 100px;
+    background: white; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(100, 14, 98, 0.3);
+    overflow: hidden; 
+    padding: 5px; 
+}
+
+.custom-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+/* Typhography */
+.uni-name {
+    color: var(--uitm-yellow);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.main-title {
+    font-weight: 800;
+    color: var(--uitm-blue);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+
+.description {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Buttons */
+.btn-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+/* User Button Style */
+.btn-user {
+    background-color: var(--uitm-purple);
+    color: white;
+    box-shadow: 0 8px 20px -5px rgba(100, 14, 98, 0.4);
+}
+
+.btn-user .btn-icon {
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.btn-user:hover {
+    background-color: #500b4e;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px -5px rgba(100, 14, 98, 0.5);
+    color: white;
+}
+
+/* Admin Button Style */
+.btn-admin {
+    background-color: white;
+    border-color: #e2e8f0;
+    color: var(--text-dark);
+}
+
+.btn-admin .btn-icon {
+    background: #f1f5f9;
+    color: var(--uitm-blue);
+}
+
+.btn-admin:hover {
+    border-color: var(--uitm-blue);
+    background-color: #f8fafc;
+    transform: translateY(-3px);
+    color: var(--uitm-blue);
+}
+
+/* Arrow Animation */
+.arrow-anim {
+    transition: transform 0.3s;
+}
+
+.btn-custom:hover .arrow-anim {
+    transform: translateX(5px);
+}
+
+/* Footer */
+.footer-text {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+/* Responsive Mobile */
+@media (max-width: 576px) {
+    .landing-card {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    .main-title { font-size: 2rem; }
+}   

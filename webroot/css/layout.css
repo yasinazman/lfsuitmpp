@@ -1,0 +1,347 @@
+/* =========================================
+   1. GLOBAL VARIABLES & LAYOUT
+   ========================================= */
+:root {
+    /* Color Palette */
+    --primary: #640e62;
+    --primary-dark: #0f1f6a;
+    --accent: #f9c024;
+
+    --surface: #ffffff;
+    --body-bg: #f8fafc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --card-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    
+    /* Dimensions */
+    --input-h: 52px;
+    --radius-lg: 24px;
+    --radius-md: 12px;
+    --card-padding: 40px;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --surface: #1e293b;
+    --body-bg: #0f172a;
+    --text-main: #f1f5f9; 
+    --text-muted: #a1a1aa;
+    --border-color: #334155;
+    --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background-color: var(--body-bg);
+    background-image: radial-gradient(circle at top right, var(--body-bg) 0%, var(--body-bg) 100%);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* =========================================
+   2. GLOBAL HEADER & NAVIGATION
+   ========================================= */
+.top-nav {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    padding: 0.8rem 4rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-logo {
+    height: 40px;
+    width: auto;
+    background: white; 
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.brand-text {
+    font-weight: 800; 
+    font-size: 1.4rem; 
+    color: white; 
+    letter-spacing: -0.5px;
+}
+
+.nav-info {
+    color: rgba(255,255,255,0.8); 
+    font-size: 0.85rem; 
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .top-nav { 
+        padding: 1rem 1.5rem; 
+    }
+    .brand-text { 
+        font-size: 1.1rem; 
+    }
+    .header-logo { 
+        height: 32px; 
+    }
+}
+
+/* =========================================
+   3. TOAST NOTIFICATION
+   ========================================= */
+.message {
+    position: fixed;
+    top: 30px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10000;
+    min-width: 320px;
+    padding: 15px 25px;
+    background: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+
+.message.success { 
+    background-color: #ecfdf5; 
+    color: #065f46; 
+    border: 1px solid #10b981; 
+}
+
+.message.error { 
+    background-color: #fef2f2; 
+    color: #991b1b; 
+    border: 1px solid #ef4444; 
+}
+
+.message.fade-out { 
+    opacity: 0; 
+    top: -100px; 
+    transform: translateX(-50%) scale(0.9); 
+    transition: 0.5s; 
+}
+
+@media (max-width: 600px) {
+    .message { 
+        min-width: 80%; 
+        top: 20px; 
+        font-size: 0.85rem; 
+    }
+}
+
+/* =========================================
+   4. DARK MODE COMPONENTS & FIXES
+   ========================================= */
+
+.dark-mode-btn {
+    background: white;
+    border: 1px solid #e2e8f0;
+    color: var(--primary);
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode .dark-mode-btn {
+    background: var(--surface);
+    color: var(--accent);
+    border-color: var(--border-color);
+}
+
+/* Containers & Cards */
+.dark-mode .report-card, 
+.dark-mode .premium-search-card, 
+.dark-mode .table-container,
+.dark-mode .custom-table,
+.dark-mode .view-card,
+.dark-mode .form-container-clean,
+.dark-mode .stat-card,
+.dark-mode .view-info-section,
+.dark-mode .stats-card-block,
+.dark-mode .stats-full-card {
+    background-color: var(--surface) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--card-shadow) !important;
+}
+
+/* Tables */
+.dark-mode .custom-table th {
+    background-color: var(--primary) !important;
+    color: var(--accent) !important;
+}
+
+.dark-mode .custom-table tr, 
+.dark-mode .custom-table td {
+    background-color: var(--surface) !important;
+    color: var(--text-main) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.dark-mode .row-highlight, 
+.dark-mode .row-highlight-green {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dark-mode .custom-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.dark-mode .custom-table tbody tr:hover td {
+    color: var(--text-main) !important;
+}
+
+/* Text & Headings */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode .fw-bold, 
+.dark-mode .info-value,
+.dark-mode .breakdown-title {
+    color: #ffffff !important;
+}
+
+.dark-mode small, 
+.dark-mode .text-gray, 
+.dark-mode .info-label {
+    color: var(--text-muted) !important;
+}
+
+.dark-mode .stat-info p {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+}
+
+/* Dashboard Stats */
+.dark-mode .stat-info h3 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.dark-mode .stat-card {
+    background: linear-gradient(145deg, #1e293b, #111827) !important;
+}
+
+.dark-mode .card-lost-pending { 
+    border-bottom: 4px solid #f97316 !important; 
+}
+.dark-mode .card-found-pending { 
+    border-bottom: 4px solid #10b981 !important; 
+}
+.dark-mode .card-total-lost { 
+    border-bottom: 4px solid #ef4444 !important; 
+}
+.dark-mode .card-total-found { 
+    border-bottom: 4px solid #22c55e !important; 
+}
+
+/* Charts */
+.dark-mode .chart-box,
+.dark-mode .chart-container { 
+    background-color: var(--surface) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--card-shadow) !important;
+}
+
+.dark-mode .chart-title,
+.dark-mode .chart-box h5 { 
+    color: var(--text-main) !important; 
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+/* Input Forms */
+.dark-mode input, 
+.dark-mode select, 
+.dark-mode textarea,
+.dark-mode .form-control-custom {
+    background-color: #0f172a !important;
+    color: #ffffff !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.dark-mode .date-badge {
+    background: #1e293b !important;
+    border: 1px solid var(--border-color);
+    color: var(--accent) !important;
+}
+
+/* Weekly Stats */
+.dark-mode .weekly-card {
+    background-color: #0f172a !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: none !important;
+}
+
+.dark-mode .weekly-number {
+    text-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.dark-mode .btn-download-report {
+    background-color: rgba(225, 29, 72, 0.2) !important;
+    color: #fb7185 !important;
+    border: 1px solid rgba(225, 29, 72, 0.3) !important;
+}
+
+.dark-mode .btn-download-report:hover {
+    background-color: #e11d48 !important;
+    color: white !important;
+}
+
+/* Monthly Breakdown */
+.dark-mode .stats-full-card { 
+    padding: 30px !important; 
+}
+
+.dark-mode .breakdown-title { 
+    border-bottom: 2px solid var(--border-color); 
+}
+
+.dark-mode .stats-summary-box {
+    background-color: #0f172a !important;
+    border: 1px solid var(--border-color) !important;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .stats-summary-box:hover {
+    background-color: #1e293b !important;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.dark-mode .summary-label {
+    color: var(--accent) !important;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 700 !important;
+}
+
+.dark-mode .text-lost { 
+    color: #fb7185 !important; 
+    font-weight: 600; 
+}
+
+.dark-mode .text-found { 
+    color: #4ade80 !important; 
+}
