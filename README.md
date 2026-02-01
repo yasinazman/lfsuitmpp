@@ -3,7 +3,7 @@
 
 LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak Perdana. It digitizes the manual process of reporting, tracking, and managing lost and found items within the campus, ensuring a more efficient recovery process for students and staff.
 
-![Dashboard Preview](screenshots/dashboard_dark.png)
+![Dashboard Preview](screenshots/Admindashboard_DarkMode.png)
 
 ## 🚀 Key Features
 * **Secure Authentication**: Role-based access for administrators with secure login/logout.
@@ -29,7 +29,8 @@ LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak
     * Import the SQL schema located at `database/lfsuitmpp.sql`.
 3.  **Environment Configuration:**
     * Configure your database credentials in `config/app_local.php`.
-4.  **Browser Requirement:** * For the best experience, use **Google Chrome** as per course guidelines.
+4.  **Browser Requirement:**
+    * For the best experience, use **Google Chrome** as per course guidelines.
 
 ## 👥 Development Team (CDIM2624B)
 | Name | Student ID | Role & Contribution |
@@ -38,8 +39,10 @@ LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak
 | **Adi Farhan Bin Mohd Faizal** | 2025198493 | **Lost Items Module Lead** <br> (Lost Report CRUD & User Forms) |
 | **Muhamad Nur Zuhair Bin Asmade** | 2025381093 | **Found Items Module Lead** <br> (Found Report CRUD & Claim Status Logic) |
 | **Muhammad Adib Fitri Bin Suhaimi** | 2025197205 | **Admin Dashboard Specialist** <br> (Data Monitoring, Statistics & Reporting Logic) |
-| **Ryan Iskandar Shah** | 2025148771 | **Quality Assurance (QA)** <br> (System Testing, Documentation & User Manual) |
+| **Ryan Iskandar Shah Bin Mohd Shahril Nizam** | 2025148771 | **Quality Assurance (QA)** <br> (System Testing, Documentation & User Manual) |
 
 ---
-**Lecturer:** Dr. Muhammad Asyraf Bin Wahi Anuar  
-**Faculty:** Faculty of Information Management, UiTM Puncak Perdana
+**Lecturer:** Dr. Muhammad Asyraf Bin Wahi Anuar
+**Program:** Bachelor of Information Science (Hons.) Information Systems Management
+**Faculty:** Faculty of Information Science, College of Computing, Informatics and Mathematics
+**Campus:** UiTM Puncak Perdana
