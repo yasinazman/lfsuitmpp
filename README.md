@@ -13,13 +13,14 @@ LFSUiTMPP is a specialised web-based management system developed for UiTM Puncak
 * **Dynamic UI/UX**: Professional responsive design featuring a persistent Dark Mode toggle.
 * **Automated PDF Export**: Professional report generation for case evidence and documentation.
 * **Data Visualisation**: Integrated Chart.js for Monthly and Weekly report analysis.
-* **Advanced Filtering**: Quick search and status filtering for efficient record management.
+* **Advanced Filtering**: Quick search and status filtering for efficient record management. <br>
 
 ## 🛠️ Tech Stack
 * **Backend:** CakePHP Framework (PHP 8.1+)
 * **Database:** MySQL
 * **Frontend:** HTML5, CSS3 (Custom Variables), JavaScript (ES6)
-* **Library:** Chart.js, FontAwesome 6.4.0, Google Fonts (Poppins)
+* **Library:** Chart.js, FontAwesome 6.4.0, Google Fonts (Poppins) 
+<br>
 
 ## 📂 Installation & Setup
 1.  **Clone the repository:**
@@ -27,7 +28,7 @@ LFSUiTMPP is a specialised web-based management system developed for UiTM Puncak
     git clone [https://github.com/yasinazman/lfsuitmpp.git](https://github.com/yasinazman/lfsuitmpp.git)
     ```
     *Alternatively, you can simply **Download ZIP** from the repository homepage and extract it.* <br>
-    <br>
+    
 2.  **Install Dependencies:**
     * Run this command in the project terminal to download required libraries:
     ```bash
@@ -48,6 +49,7 @@ LFSUiTMPP is a specialised web-based management system developed for UiTM Puncak
     * To access the administrator dashboard, use the default login:
         * **Username:** `yasin`
         * **Password:** `123456`
+<br>
 
 ## 👥 Development Team (CDIM2624B)
 | Name | Student ID | Role & Contribution |
