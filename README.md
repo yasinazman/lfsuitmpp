@@ -1,53 +1,45 @@
-# CakePHP Application Skeleton
+# 🛡️ UiTMPP Lost & Found System (LFSUiTMPP)
+**Advanced Web Design Development and Content Management (IMS566)**
 
-![Build Status](https://github.com/cakephp/app/actions/workflows/ci.yml/badge.svg?branch=5.x)
-[![Total Downloads](https://img.shields.io/packagist/dt/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
-[![PHPStan](https://img.shields.io/badge/PHPStan-level%208-brightgreen.svg?style=flat-square)](https://github.com/phpstan/phpstan)
+LFSUiTMPP is a specialized web-based management system developed for UiTM Puncak Perdana. It digitizes the manual process of reporting, tracking, and managing lost and found items within the campus, ensuring a more efficient recovery process for students and staff.
 
-A skeleton for creating applications with [CakePHP](https://cakephp.org) 5.x.
+![Dashboard Preview](screenshots/dashboard_dark.png)
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+## 🚀 Key Features
+* **Secure Authentication**: Role-based access for administrators with secure login/logout.
+* **Full CRUD Lifecycle**: Comprehensive management of Lost and Found reports (Create, Read, Update, Delete).
+* **Dynamic UI/UX**: Professional responsive design featuring a persistent Dark Mode toggle.
+* **Automated PDF Export**: Professional report generation for case evidence and documentation.
+* **Data Visualization**: Integrated Chart.js for Monthly and Weekly report analysis.
+* **Advanced Filtering**: Quick search and status filtering for efficient record management.
 
-## Installation
+## 🛠️ Tech Stack
+* **Backend:** CakePHP Framework (PHP 8.1+)
+* **Database:** MySQL
+* **Frontend:** HTML5, CSS3 (Custom Variables), JavaScript (ES6)
+* **Library:** Chart.js, FontAwesome 6.4.0, Google Fonts (Poppins)
 
-1. Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+## 📂 Installation & Setup
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/lfsuitmpp.git](https://github.com/your-username/lfsuitmpp.git)
+    ```
+2.  **Database Setup:**
+    * Create a new database named `lfsuitmpp`.
+    * Import the SQL schema located at `database/lfsuitmpp.sql`.
+3.  **Environment Configuration:**
+    * Configure your database credentials in `config/app_local.php`.
+4.  **Browser Requirement:** * For the best experience, use **Google Chrome** as per course guidelines.
 
-If Composer is installed globally, run
+## 👥 Development Team (CDIM2624B)
+| Name | Student ID | Primary Role |
+| :--- | :--- | :--- |
+| **Muhammad Yasin Bin Azman** | 2025198311 | Project Manager & Lead Backend Developer |
+| **Adi Farhan Bin Mohd Faizal** | 2025198493 | UI/UX Designer & Frontend Developer |
+| **Muhammad Adib Fitri Bin Suhaimi** | 2025197205 | Database Administrator |
+| **Ryan Iskandar Shah Bin Mohd Shahril Nizam** | 2025148771 | Quality Assurance (QA) & Documentation |
+| **Muhamad Nur Zuhair Bin Asmade** | 2025381093 | System Analyst |
 
-```bash
-composer create-project --prefer-dist cakephp/app
-```
-
-In case you want to use a custom app dir name (e.g. `/myapp/`):
-
-```bash
-composer create-project --prefer-dist cakephp/app myapp
-```
-
-You can now either use your machine's webserver to view the default home page, or start
-up the built-in webserver with:
-
-```bash
-bin/cake server -p 8765
-```
-
-Then visit `http://localhost:8765` to see the welcome page.
-
-## Update
-
-Since this skeleton is a starting point for your application and various files
-would have been modified as per your needs, there isn't a way to provide
-automated upgrades, so you have to do any updates manually.
-
-## Configuration
-
-Read and edit the environment specific `config/app_local.php` and set up the
-`'Datasources'` and any other configuration relevant for your application.
-Other environment agnostic settings can be changed in `config/app.php`.
-
-## Layout
-
-The app skeleton uses [Milligram](https://milligram.io/) (v1.3) minimalist CSS
-framework by default. You can, however, replace it with any other library or
-custom styles.
+---
+**Lecturer:** Dr. Muhammad Asyraf Bin Wahi Anuar  
+**Faculty:** Faculty of Information Management, UiTM Puncak Perdana
