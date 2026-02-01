@@ -24,16 +24,21 @@ LFSUiTMPP is a specialised web-based management system developed for UiTM Puncak
 ## 📂 Installation & Setup
 1.  **Clone the repository:**
     ```bash
-    https://github.com/yasinazman/lfsuitmpp.git
+    git clone [https://github.com/yasinazman/lfsuitmpp.git](https://github.com/yasinazman/lfsuitmpp.git)
     ```
-2.  **Database Setup:**
+2.  **Install Dependencies:**
+    * Run this command in the project terminal to download required libraries:
+    ```bash
+    composer install
+    ```
+3.  **Database Setup:**
     * Create a new database named `lfsuitmpp`.
     * Import the SQL schema located at `database/lfsuitmpp.sql`.
-3.  **Environment Configuration:**
-    * Configure your database credentials in `config/app_local.php`.
-4.  **Browser Requirement:**
+4.  **Environment Configuration:**
+    * Open `config/app_local.php` and configure your database credentials (`username`, `password` & `database`).
+5.  **Browser Requirement:**
     * For the best experience, use **Google Chrome** as per course guidelines.
-5.  **Admin Access (Login Credentials):**
+6.  **Admin Access (Login Credentials):**
     * To access the administrator dashboard, use the default login:
         * **Username:** `yasin`
         * **Password:** `123456`
